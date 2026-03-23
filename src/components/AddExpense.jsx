@@ -17,6 +17,12 @@ const AddExpense = () => {
     const expenseNote = expenseNoteElement.current.value;
 
     addExpense(expense,expenseType, expenseDate,expenseNote);
+    
+    amountSpendElement.current.value="";
+    expenseTypeElement.current.value="";
+    expenseDateElement.current.value="";
+    expenseNoteElement.current.value="";
+
   }
 
   return (
